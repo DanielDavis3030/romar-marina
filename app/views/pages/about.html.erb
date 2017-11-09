@@ -5,3 +5,16 @@ This web application was created with
 <%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
 from the <%= link_to('RailsApps project', 'http://railsapps.github.io/') %>.
 </p>
+
+ 
+<h2 class="header"><%= phrase('site.index.header') %></h2>
+
+<div><%= phrase('site.index.intro') %></div>
+
+<div><%= t('site.index.footer') %></div>
+
+<div><%= phrase('test', scope: 'models.errors') %></div>
+
+<div><%= phrase 'test', scope: :site %></div>
+
+<div><%= distance_of_time_in_words(Time.now, Time.now) %></div>

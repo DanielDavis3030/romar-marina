@@ -9,11 +9,17 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    
+
     <header>
       <%= render 'layouts/navigation' %>
     </header>
     <main role="main">
        <%= render 'layouts/messages' %>
+       <ul class="hmenu">
+  <%= render 'devise/menu/registration_items' %>
+  <%= render 'devise/menu/login_items' %>
+</ul>
        <%= yield %>
     </main>
   </body>
