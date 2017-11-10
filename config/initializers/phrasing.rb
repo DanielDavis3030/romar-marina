@@ -1,5 +1,5 @@
 Phrasing.setup do |config|
-  config.route = 'p/ph/phrasing'
+  config.route = 'phrasing'
 end
 
 # List all the model attributes you wish to edit with Phrasing, example:
