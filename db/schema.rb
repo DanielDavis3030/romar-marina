@@ -12,6 +12,13 @@
 
 ActiveRecord::Schema.define(version: 20171109181718) do
 
+  create_table "phrasing_phrase_versions", force: :cascade do |t|
+    t.integer  "phrasing_phrase_id"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "phrasing_phrases", force: :cascade do |t|
     t.string   "locale"
     t.string   "key"
@@ -35,6 +42,7 @@ ActiveRecord::Schema.define(version: 20171109181718) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "name"
+    t.boolean  "admin"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
