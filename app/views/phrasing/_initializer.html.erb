@@ -1,0 +1,46 @@
+<% if can_edit_phrases? %>
+  <div class="text-options" id="zenpenbubble">
+    <div class="options">
+      <span class="no-overflow">
+        <span class="lengthen ui-inputs">
+          <button class="url useicons">&#xe005;</button>
+          <input class="url-input" placeholder="Type or Paste URL here" type="text">/</input>
+          <button class="bold">b</button>
+          <button class="italic">i</button>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div id="phrasing-edit-mode-bubble">
+    <div id="phrasing-edit-mode">
+      <div id="phrasing-edit-mode-headline">
+        <p>Edit</p>
+      </div>
+      <div id="phrasing-onoffswitch">
+        <div class="onoffswitch">
+          <input checked="checked" class="onoffswitch-checkbox" id="edit-mode-onoffswitch" name="onoffswitch" type="checkbox">/</input>
+          <label class="onoffswitch-label" for="edit-mode-onoffswitch">
+            <div class="onoffswitch-inner"></div>
+            <div class="onoffswitch-switch"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="phrasing-saved-status">
+      <div id="phrasing-saved-status-headline">
+        <p>Saved</p>
+      </div>
+      <div id="phrasing-saved-status-indicator">
+        <div id="phrasing-saved-status-indicator-circle"></div>
+      </div>
+    </div>
+    <div id="phrasing-edit-all-phrases">
+      <div id="phrasing-edit-all-phrases-headline">
+        <p>Edit all</p>
+      </div>
+      <div id="phrasing-edit-all-phrases-icon-container">
+        <%= link_to image_tag("phrasing_icon_edit_all.png", class: 'phrasing-edit-all-phrases-icon'), phrasing_phrases_path, data: { no_turbolink: true }, class: "phrasing-edit-all-phrases-link" %>
+      </div>
+    </div>
+  </div>
+<% end %>

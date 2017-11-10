@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require popper
-//= require phrasing
 //= require bootstrap-sprockets
 //= require_tree .

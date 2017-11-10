@@ -1,0 +1,21 @@
+<div id="header">
+  <h1>
+    <%= link_to "Phrasing", phrasing_phrases_path %>
+  </h1>
+  <ul>
+    <li>
+      <%= link_to "Phrases", phrasing_phrases_path %>
+    </li>
+    <li>
+      <%= link_to "Import / Export", import_export_phrasing_phrases_path %>
+    </li>
+    <li>
+      <%= link_to "Help", help_phrasing_phrases_path %>
+    </li>
+    <% if respond_to? :root_path %>
+      <li>
+        <%= link_to "Home page", root_path %>
+      </li>
+    <% end %>
+  </ul>
+</div>
