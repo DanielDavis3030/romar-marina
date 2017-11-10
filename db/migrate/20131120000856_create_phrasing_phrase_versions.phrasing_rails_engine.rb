@@ -6,6 +6,5 @@ class CreatePhrasingPhraseVersions < ActiveRecord::Migration
       t.text :value
       t.timestamps
     end
-    add_index :phrasing_phrases, [:locale, :key], :unique => true
-  end
+
 end
